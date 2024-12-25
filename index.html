@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eziah Tech Solutions Limited</title>
+    <style>
+        /* Define general styles for the webpage */
+        body {
+            font-family: Arial, sans-serif; /* Set a clean, sans-serif font for readability */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light gray background for subtle contrast */
+            color: #333; /* Dark text color for visibility */
+        }
+
+        /* Style the header at the top of the page */
+        header {
+            background-color: #0056b3; /* Deep blue background */
+            color: white; /* White text for contrast */
+            padding: 20px 10px;
+            text-align: center; /* Center the text content */
+        }
+
+        /* Style the navigation menu */
+        nav {
+            display: flex; /* Arrange navigation links horizontally */
+            justify-content: center; /* Center navigation links */
+            background-color: #003d80; /* Darker blue background */
+        }
+
+        /* Style individual navigation links */
+        nav a {
+            color: white; /* White text for visibility */
+            text-decoration: none; /* Remove underline from links */
+            padding: 10px 20px; /* Add spacing around links */
+            font-weight: bold; /* Make text bold for emphasis */
+        }
+
+        /* Change background color on hover for navigation links */
+        nav a:hover {
+            background-color: #002952; /* Even darker blue on hover */
+        }
+
+        /* Style the hero section */
+        .hero {
+            text-align: center; /* Center-align content */
+            padding: 50px 20px; /* Add vertical and horizontal padding */
+            background-color: #e8f0fe; /* Light blue background */
+        }
+
+        /* Style the main heading in the hero section */
+        .hero h1 {
+            font-size: 3em; /* Large font size */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Style the paragraph in the hero section */
+        .hero p {
+            font-size: 1.2em; /* Slightly larger font for emphasis */
+        }
+
+        /* Style the services section */
+        .services {
+            display: flex; /* Arrange services in a row */
+            justify-content: space-around; /* Space out the service boxes */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            padding: 20px; /* Add padding inside the section */
+            background-color: #fff; /* White background for contrast */
+        }
+
+        /* Style individual service boxes */
+        .service {
+            width: 30%; /* Set width of each service box */
+            margin: 10px; /* Add margin between boxes */
+            padding: 20px; /* Add padding inside each box */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+            background-color: #f9f9f9; /* Light gray background */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        /* Style the headings in the service boxes */
+        .service h3 {
+            color: #0056b3; /* Blue color for headings */
+        }
+
+        /* Style the footer section */
+        footer {
+            text-align: center; /* Center-align text */
+            padding: 20px; /* Add padding inside footer */
+            background-color: #003d80; /* Dark blue background */
+            color: white; /* White text for visibility */
+            margin-top: 20px; /* Add space above the footer */
+        }
+    </style>
+    <script>
+        /* Run the script once the document is fully loaded */
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Document loaded successfully."); // Confirm the document is loaded
+
+            // Select all navigation links
+            const navLinks = document.querySelectorAll("nav a");
+            navLinks.forEach(link => {
+                // Add a click event listener to each link
+                link.addEventListener("click", () => {
+                    console.log(`Navigated to ${link.getAttribute("href")}`); // Log the target of the navigation
+                });
+            });
+
+            // Select all service elements
+            const serviceElements = document.querySelectorAll(".service");
+            serviceElements.forEach((service, index) => {
+                // Log the title of each service element
+                console.log(`Service ${index + 1}: ${service.querySelector("h3").textContent} loaded.`);
+            });
+
+            console.log("All scripts initialized successfully."); // Confirm all scripts are working
+        });
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Eziah Tech Solutions Limited</h1>
+        <p>Innovating Tomorrow, Today</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Eziah Tech Solutions</h1>
+        <p>Your trusted partner for innovative software solutions and transformative technology.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="service">
+            <h3>Custom Software Development</h3>
+            <p>We design and develop tailored software solutions to meet your unique business needs.</p>
+        </div>
+        <div class="service">
+            <h3>Web & Mobile Applications</h3>
+            <p>Creating user-friendly and scalable web and mobile applications that drive engagement.</p>
+        </div>
+        <div class="service">
+            <h3>IT Consulting</h3>
+            <p>Providing expert advice to help businesses leverage technology for growth and efficiency.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Eziah Tech Solutions Limited. All rights reserved.</p>
+    </footer>
+</body>
+</html>
